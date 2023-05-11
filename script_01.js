@@ -70,10 +70,10 @@ function ausgabeNamenParams(
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenParams2(
-    prompt("Wie ist dein Vorname?"),
-    prompt("Wie ist dein Nachname")
-    )
+// ausgabeNamenParams2(
+    // prompt("Wie ist dein Vorname?"),
+    // prompt("Wie ist dein Nachname")
+    // )
 
 function ausgabeNamenParams2(
     firstName,
@@ -89,3 +89,26 @@ function ausgabeNamenParams2(
 
 }
 
+/***** Funktionen 03b *****/
+// Trennen der Funktionalitäten in Funktionen| return
+
+output(getString(
+    prompt("Wie ist dein Vorname?"),
+    prompt("Wie ist dein Nachname")));
+
+function getString(firstName, lastName) {
+    
+    const GAP = " "
+    let outputStr = "Hallo" + GAP + firstName + GAP + lastName + "!";
+    return outputStr;
+}
+
+/** Input --> Parameter | return --> Output **/
+
+// Funktionalität: String Output
+
+function output(outputData) {
+    
+    console.log(outputData)
+
+}
