@@ -92,9 +92,10 @@ function ausgabeNamenParams2(
 /***** Funktionen 03b *****/
 // Trennen der Funktionalitäten in Funktionen| return
 
-output(getString(
-    prompt("Wie ist dein Vorname?"),
-    prompt("Wie ist dein Nachname")));
+output(
+    getString(
+        prompt("Wie ist dein Vorname?"),
+        prompt("Wie ist dein Nachname")));
 
 function getString(firstName, lastName) {
     
