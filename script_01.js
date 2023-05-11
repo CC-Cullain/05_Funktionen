@@ -52,10 +52,10 @@ function ausgabeNamenParam(firstName) {
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter
 
-ausgabeNamenParams(
-    prompt("Wie ist dein Vorname?"),
-    prompt("Wie ist dein Nachname")
-    )
+// ausgabeNamenParams(
+//     prompt("Wie ist dein Vorname?"),
+//     prompt("Wie ist dein Nachname")
+//     )
 
 function ausgabeNamenParams(
     firstName,
@@ -64,3 +64,28 @@ function ausgabeNamenParams(
     console.log("Hallo " + firstName + " " + lastName + "!");
 
 }
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+ausgabeNamenParams2(
+    prompt("Wie ist dein Vorname?"),
+    prompt("Wie ist dein Nachname")
+    )
+
+function ausgabeNamenParams2(
+    firstName,
+    lastName) {
+    
+    // 1. Funktionalität: string composing
+    const GAP = " "
+    let outputStr = "Hallo" + GAP + firstName + GAP + lastName + "!";
+
+    // 2. Funktionalität: string output
+
+    console.log(outputStr);
+
+}
+
