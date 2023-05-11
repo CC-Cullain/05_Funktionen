@@ -41,11 +41,26 @@ function test() {
 //         } 
 // }
 
-ausgabeNamenParam(prompt("Wie heißt du?")) // Argument (Daten für Parameter)
+// ausgabeNamenParam(prompt("Wie heißt du?")) // Argument (Daten für Parameter)
 
 function ausgabeNamenParam(firstName) {
     
-        console.log("Hallo " + firstName);
+    console.log("Hallo " + firstName);
 
 }
 
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter
+
+ausgabeNamenParams(
+    prompt("Wie ist dein Vorname?"),
+    prompt("Wie ist dein Nachname")
+    )
+
+function ausgabeNamenParams(
+    firstName,
+    lastName) {
+    
+    console.log("Hallo " + firstName + " " + lastName + "!");
+
+}
